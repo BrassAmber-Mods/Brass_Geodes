@@ -1,0 +1,56 @@
+{
+  // Items
+  "item.brass_geodes.pearl": "Perle",
+  "item.brass_geodes.ruby" : "Rubis",
+  "item.brass_geodes.sapphire": "Saphir",
+  "item.brass_geodes.topaz": "Topaze",
+
+  // Blocks
+  "block.brass_geodes.amethyst_block" : "Bloc d'améthyste",
+  "block.brass_geodes.ruby_block" : "Bloc de rubis",
+  "block.brass_geodes.sapphire_block": "Bloc de saphir",
+  "block.brass_geodes.topaz_block": "Bloc de topaze ",
+
+  "block.brass_geodes.budding_diamond": "Druse de diamant",
+  "block.brass_geodes.budding_emerald": "Druse d'émeraude",
+  "block.brass_geodes.budding_ruby" : "Druse de rubis",
+  "block.brass_geodes.budding_sapphire": "Druse de saphir",
+  "block.brass_geodes.budding_topaz": "Druse de topaze",
+
+  "block.brass_geodes.geode_diamond": "Bloc de diamant brut",
+  "block.brass_geodes.geode_emerald": "Bloc d'émeraude brut",
+  "block.brass_geodes.geode_ruby" : "Bloc de rubis brut",
+  "block.brass_geodes.geode_sapphire": "Bloc de saphir brut",
+  "block.brass_geodes.geode_topaz": "Bloc de topaze brut",
+
+  "block.brass_geodes.diamond_cluster": "Amas de diamant",
+  "block.brass_geodes.emerald_cluster": "Amas d'émeraude",
+  "block.brass_geodes.ruby_cluster" : "Amas de rubis",
+  "block.brass_geodes.sapphire_cluster": "Amas de saphir",
+  "block.brass_geodes.topaz_cluster": "Amas de topaze",
+
+  "block.brass_geodes.large_diamond_bud": "Grand cristal de diamant",
+  "block.brass_geodes.large_emerald_bud": "Grand cristal d'émeraude",
+  "block.brass_geodes.large_ruby_bud" : "Grand cristal de rubis",
+  "block.brass_geodes.large_sapphire_bud": "Grand cristal de saphir",
+  "block.brass_geodes.large_topaz_bud": "Grand cristal de topaze",
+
+  "block.brass_geodes.medium_diamond_bud": "Cristal moyen de diamant",
+  "block.brass_geodes.medium_emerald_bud": "Cristal moyen de d'émeraude",
+  "block.brass_geodes.medium_ruby_bud" : "Cristal moyen de rubis",
+  "block.brass_geodes.medium_sapphire_bud": "Cristal moyen de saphir",
+  "block.brass_geodes.medium_topaz_bud": "Cristal moyen de topaze",
+
+  "block.brass_geodes.small_diamond_bud": "Petit cristal de diamant",
+  "block.brass_geodes.small_emerald_bud": "Petit cristal d'émeraude",
+  "block.brass_geodes.small_ruby_bud" : "Petit cristal de rubis",
+  "block.brass_geodes.small_sapphire_bud": "Petit cristal de saphir",
+  "block.brass_geodes.small_topaz_bud": "Petit cristal de topaze",
+
+  "block.brass_geodes.diamond_tinted_glass": "Vitres teintées en diamant",
+  "block.brass_geodes.emerald_tinted_glass": "Vitres teintées en émeraude",
+  "block.brass_geodes.ruby_tinted_glass" : "Vitres teintées en rubis",
+  "block.brass_geodes.sapphire_tinted_glass": "Vitres teintées en saphir",
+  "block.brass_geodes.topaz_tinted_glass": "Vitres teintées en topaze",
+  "block.brass_geodes.amethyst_tinted_glass": "Vitres teintées en améthyste"
+}
