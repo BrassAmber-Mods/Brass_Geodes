@@ -1,7 +1,7 @@
 package BrassAmber.com.brass_geodes.worldgen.tree;
 
 import BrassAmber.com.brass_geodes.BrassGeodes;
-import BrassAmber.com.brass_geodes.worldgen.tree.custom.BuddingGemcornDecorator;
+import BrassAmber.com.brass_geodes.worldgen.tree.custom.GemcornTrunkDecorator;
 import net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecoratorType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -15,7 +15,7 @@ public class BGTreeDecorators {
 
     public static final RegistryObject<TreeDecoratorType<?>> BUDDING_GEMCORN_DECORATOR = TREE_DECORATORS.register(
             "budding_gemcorn_replacer",
-            () -> new TreeDecoratorType<>(BuddingGemcornDecorator.CODEC)
+            () -> new TreeDecoratorType<>(GemcornTrunkDecorator.CODEC)
     );
 
     public static void register(IEventBus eventBus) {

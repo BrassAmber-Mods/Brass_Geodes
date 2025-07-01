@@ -2,7 +2,7 @@ package BrassAmber.com.brass_geodes.worldgen;
 
 import BrassAmber.com.brass_geodes.BGBlocks;
 import BrassAmber.com.brass_geodes.BrassGeodes;
-import BrassAmber.com.brass_geodes.worldgen.tree.custom.BuddingGemcornDecorator;
+import BrassAmber.com.brass_geodes.worldgen.tree.custom.GemcornTrunkDecorator;
 import BrassAmber.com.brass_geodes.worldgen.tree.custom.GemcornTrunkPlacer;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
@@ -43,12 +43,12 @@ public class BGConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> DIAMOND_GEODE_KEY = registerKey("diamond_geode");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
-        registerGemcornTree(context, AMETHYST_GEMCORN_KEY, BGBlocks.BUDDING_AMETHYST_TRUNK.get());
-        registerGemcornTree(context, TOPAZ_GEMCORN_KEY, BGBlocks.BUDDING_TOPAZ_TRUNK.get());
-        registerGemcornTree(context, SAPPHIRE_GEMCORN_KEY, BGBlocks.BUDDING_SAPPHIRE_TRUNK.get());
-        registerGemcornTree(context, RUBY_GEMCORN_KEY, BGBlocks.BUDDING_RUBY_TRUNK.get());
-        registerGemcornTree(context, EMERALD_GEMCORN_KEY, BGBlocks.BUDDING_EMERALD_TRUNK.get());
-        registerGemcornTree(context, DIAMOND_GEMCORN_KEY, BGBlocks.BUDDING_DIAMOND_TRUNK.get());
+        registerGemcornTree(context, AMETHYST_GEMCORN_KEY, BGBlocks.AMETHYST_TRUNK.get(), BGBlocks.AMETHYST_BRANCH.get());
+        registerGemcornTree(context, TOPAZ_GEMCORN_KEY, BGBlocks.TOPAZ_TRUNK.get(), BGBlocks.TOPAZ_BRANCH.get());
+        registerGemcornTree(context, SAPPHIRE_GEMCORN_KEY, BGBlocks.SAPPHIRE_TRUNK.get(), BGBlocks.SAPPHIRE_BRANCH.get());
+        registerGemcornTree(context, RUBY_GEMCORN_KEY, BGBlocks.RUBY_TRUNK.get(), BGBlocks.RUBY_BRANCH.get());
+        registerGemcornTree(context, EMERALD_GEMCORN_KEY, BGBlocks.EMERALD_TRUNK.get(), BGBlocks.EMERALD_BRANCH.get());
+        registerGemcornTree(context, DIAMOND_GEMCORN_KEY, BGBlocks.DIAMOND_TRUNK.get(), BGBlocks.DIAMOND_BRANCH.get());
 
         registerGeode(context, TOPAZ_GEODE_KEY, BGBlocks.RAW_TOPAZ_BLOCK.get(),
                 BGBlocks.BUDDING_TOPAZ.get(),
@@ -97,7 +97,7 @@ public class BGConfiguredFeatures {
         );
     }
 
-    public static void registerGemcornTree(BootstapContext<ConfiguredFeature<?, ?>> context, ResourceKey<ConfiguredFeature<?, ?>> key,  Block buddingBlock) {
+    public static void registerGemcornTree(BootstapContext<ConfiguredFeature<?, ?>> context, ResourceKey<ConfiguredFeature<?, ?>> key, Block trunkBlock, Block branchBlock) {
         register(context, key, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                         BlockStateProvider.simple(BGBlocks.GEMCORN_TRUNK.get()),
                         new GemcornTrunkPlacer(8, 0, 0),
@@ -105,7 +105,7 @@ public class BGConfiguredFeatures {
                         new FancyFoliagePlacer(ConstantInt.of(1), ConstantInt.of(2), 1),
                         new TwoLayersFeatureSize(1, 0, 1)
                 ).decorators(
-                        List.of(new BuddingGemcornDecorator(0.6F, buddingBlock.defaultBlockState()))
+                        List.of(new GemcornTrunkDecorator(0.5F, trunkBlock.defaultBlockState(), branchBlock.defaultBlockState()))
                 ).ignoreVines().dirt(BlockStateProvider.simple(Blocks.STONE)).build()
         );
     }
