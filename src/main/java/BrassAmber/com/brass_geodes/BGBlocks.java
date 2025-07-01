@@ -97,35 +97,29 @@ public class BGBlocks {
     public static final RegistryObject<Block> GEMCORN_TRUNK = registerBlock("gemcorn_trunk",
             () -> log(MapColor.DEEPSLATE, MapColor.STONE));
 
-    public static final RegistryObject<Block> BUDDING_AMETHYST_TRUNK = registerBlock("budding_amethyst_trunk",
-            () -> new BuddingGemcornTrunk(
-                    BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).randomTicks().strength(1.5F).sound(SoundType.AMETHYST).requiresCorrectToolForDrops().pushReaction(PushReaction.DESTROY),
-                    GemMaterial.AMETHYST.getGeodeRarity(), AMETHYST_BRANCH.get()
+    public static final RegistryObject<Block> AMETHYST_TRUNK = registerBlock("amethyst_trunk",
+            () -> new GemcornTrunk(
+                    BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).randomTicks().strength(1.5F).sound(SoundType.AMETHYST).requiresCorrectToolForDrops().pushReaction(PushReaction.DESTROY)
             ));
-    public static final RegistryObject<Block> BUDDING_TOPAZ_TRUNK = registerBlock("budding_topaz_trunk",
-            () -> new BuddingGemcornTrunk(
-                    BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).randomTicks().strength(1.5F).sound(SoundType.AMETHYST).requiresCorrectToolForDrops().pushReaction(PushReaction.DESTROY),
-                    GemMaterial.TOPAZ.getGeodeRarity(), TOPAZ_BRANCH.get()
+    public static final RegistryObject<Block> TOPAZ_TRUNK = registerBlock("topaz_trunk",
+            () -> new GemcornTrunk(
+                    BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).randomTicks().strength(1.5F).sound(SoundType.AMETHYST).requiresCorrectToolForDrops().pushReaction(PushReaction.DESTROY)
             ));
-    public static final RegistryObject<Block> BUDDING_SAPPHIRE_TRUNK = registerBlock("budding_sapphire_trunk",
-            () -> new BuddingGemcornTrunk(
-                    BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BLUE).randomTicks().strength(1.5F).sound(SoundType.AMETHYST).requiresCorrectToolForDrops().pushReaction(PushReaction.DESTROY),
-                    GemMaterial.SAPPHIRE.getGeodeRarity(), SAPPHIRE_BRANCH.get()
+    public static final RegistryObject<Block> SAPPHIRE_TRUNK = registerBlock("sapphire_trunk",
+            () -> new GemcornTrunk(
+                    BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BLUE).randomTicks().strength(1.5F).sound(SoundType.AMETHYST).requiresCorrectToolForDrops().pushReaction(PushReaction.DESTROY)
             ));
-    public static final RegistryObject<Block> BUDDING_RUBY_TRUNK = registerBlock("budding_ruby_trunk",
-            () -> new BuddingGemcornTrunk(
-                    BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).randomTicks().strength(1.5F).sound(SoundType.AMETHYST).requiresCorrectToolForDrops().pushReaction(PushReaction.DESTROY),
-                    GemMaterial.RUBY.getGeodeRarity(), RUBY_BRANCH.get()
+    public static final RegistryObject<Block> RUBY_TRUNK = registerBlock("ruby_trunk",
+            () -> new GemcornTrunk(
+                    BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).randomTicks().strength(1.5F).sound(SoundType.AMETHYST).requiresCorrectToolForDrops().pushReaction(PushReaction.DESTROY)
             ));
-    public static final RegistryObject<Block> BUDDING_EMERALD_TRUNK = registerBlock("budding_emerald_trunk",
-            () -> new BuddingGemcornTrunk(
-                    BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GREEN).randomTicks().strength(1.5F).sound(SoundType.AMETHYST).requiresCorrectToolForDrops().pushReaction(PushReaction.DESTROY),
-                    GemMaterial.EMERALD.getGeodeRarity(), EMERALD_BRANCH.get()
+    public static final RegistryObject<Block> EMERALD_TRUNK = registerBlock("emerald_trunk",
+            () -> new GemcornTrunk(
+                    BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GREEN).randomTicks().strength(1.5F).sound(SoundType.AMETHYST).requiresCorrectToolForDrops().pushReaction(PushReaction.DESTROY)
             ));
-    public static final RegistryObject<Block> BUDDING_DIAMOND_TRUNK = registerBlock("budding_diamond_trunk",
-            () -> new BuddingGemcornTrunk(
-                    BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_BLUE).randomTicks().strength(1.5F).sound(SoundType.AMETHYST).requiresCorrectToolForDrops().pushReaction(PushReaction.DESTROY),
-                    GemMaterial.DIAMOND.getGeodeRarity(), DIAMOND_BRANCH.get()
+    public static final RegistryObject<Block> DIAMOND_TRUNK = registerBlock("diamond_trunk",
+            () -> new GemcornTrunk(
+                    BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_BLUE).randomTicks().strength(1.5F).sound(SoundType.AMETHYST).requiresCorrectToolForDrops().pushReaction(PushReaction.DESTROY)
             ));
 
     public static final RegistryObject<Block> AMETHYST_SAPLING = registerBlock("amethyst_sapling",

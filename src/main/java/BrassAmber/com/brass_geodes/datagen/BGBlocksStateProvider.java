@@ -74,12 +74,12 @@ public class BGBlocksStateProvider extends BlockStateProvider {
         branchBlock(BGBlocks.DIAMOND_BRANCH);
 
         trunkBlock(BGBlocks.GEMCORN_TRUNK);
-        trunkBlock(BGBlocks.BUDDING_AMETHYST_TRUNK);
-        trunkBlock(BGBlocks.BUDDING_TOPAZ_TRUNK);
-        trunkBlock(BGBlocks.BUDDING_SAPPHIRE_TRUNK);
-        trunkBlock(BGBlocks.BUDDING_RUBY_TRUNK);
-        trunkBlock(BGBlocks.BUDDING_EMERALD_TRUNK);
-        trunkBlock(BGBlocks.BUDDING_DIAMOND_TRUNK);
+        trunkBlock(BGBlocks.AMETHYST_TRUNK);
+        trunkBlock(BGBlocks.TOPAZ_TRUNK);
+        trunkBlock(BGBlocks.SAPPHIRE_TRUNK);
+        trunkBlock(BGBlocks.RUBY_TRUNK);
+        trunkBlock(BGBlocks.EMERALD_TRUNK);
+        trunkBlock(BGBlocks.DIAMOND_TRUNK);
 
         gemcornSapling(BGBlocks.AMETHYST_SAPLING, "amethyst_sapling");
         gemcornSapling(BGBlocks.TOPAZ_SAPLING, "topaz_sapling");

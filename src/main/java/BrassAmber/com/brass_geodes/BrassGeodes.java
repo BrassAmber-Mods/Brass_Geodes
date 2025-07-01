@@ -89,12 +89,12 @@ public class BrassGeodes {
             event.accept(BGBlocks.GEMCORN_BRANCH);
             event.accept(BGBlocks.GEMCORN_TRUNK);
 
-            event.accept(BGBlocks.BUDDING_AMETHYST_TRUNK);
-            event.accept(BGBlocks.BUDDING_TOPAZ_TRUNK);
-            event.accept(BGBlocks.BUDDING_SAPPHIRE_TRUNK);
-            event.accept(BGBlocks.BUDDING_RUBY_TRUNK);
-            event.accept(BGBlocks.BUDDING_EMERALD_TRUNK);
-            event.accept(BGBlocks.BUDDING_DIAMOND_TRUNK);
+            event.accept(BGBlocks.AMETHYST_TRUNK);
+            event.accept(BGBlocks.TOPAZ_TRUNK);
+            event.accept(BGBlocks.SAPPHIRE_TRUNK);
+            event.accept(BGBlocks.RUBY_TRUNK);
+            event.accept(BGBlocks.EMERALD_TRUNK);
+            event.accept(BGBlocks.DIAMOND_TRUNK);
 
 
             event.accept(BGBlocks.AMETHYST_BRANCH);

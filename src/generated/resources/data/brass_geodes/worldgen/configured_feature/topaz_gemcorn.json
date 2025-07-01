@@ -4,10 +4,17 @@
     "decorators": [
       {
         "type": "brass_geodes:budding_gemcorn_replacer",
-        "budding_block": {
-          "Name": "brass_geodes:budding_topaz_trunk"
+        "branch_block": {
+          "Name": "brass_geodes:topaz_branch",
+          "Properties": {
+            "facing": "up",
+            "waterlogged": "false"
+          }
         },
-        "probability": 0.6
+        "probability": 0.5,
+        "trunk_block": {
+          "Name": "brass_geodes:topaz_trunk"
+        }
       }
     ],
     "dirt_provider": {

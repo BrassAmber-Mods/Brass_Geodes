@@ -1,5 +1,6 @@
 package BrassAmber.com.brass_geodes.block;
 
+import BrassAmber.com.brass_geodes.BGBlocks;
 import com.google.common.collect.Lists;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -7,10 +8,13 @@ import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.RandomSource;
+import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
@@ -32,6 +36,11 @@ public class GemcornBranch extends AmethystClusterBlock implements SimpleWaterlo
     @Override
     public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
         return 0;
+    }
+
+    @Override
+    public @Nullable BlockState getStateForPlacement(BlockPlaceContext p_152019_) {
+        return super.getStateForPlacement(p_152019_);
     }
 
     public void animateTick(BlockState blockState, Level level, BlockPos blockPos, RandomSource random) {

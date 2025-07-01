@@ -1,11 +1,11 @@
 {
   "values": [
     "brass_geodes:gemcorn_trunk",
-    "brass_geodes:budding_amethyst_trunk",
-    "brass_geodes:budding_topaz_trunk",
-    "brass_geodes:budding_sapphire_trunk",
-    "brass_geodes:budding_ruby_trunk",
-    "brass_geodes:budding_emerald_trunk",
-    "brass_geodes:budding_diamond_trunk"
+    "brass_geodes:amethyst_trunk",
+    "brass_geodes:topaz_trunk",
+    "brass_geodes:sapphire_trunk",
+    "brass_geodes:ruby_trunk",
+    "brass_geodes:emerald_trunk",
+    "brass_geodes:diamond_trunk"
   ]
 }

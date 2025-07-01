@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "brass_geodes:block/gemcorn/budding_amethyst_trunk"
+    "all": "brass_geodes:block/gemcorn/ruby_trunk"
   }
 }
