@@ -1,5 +1,6 @@
-package BrassAmber.com.brass_geodes;
+package BrassAmber.com.brass_geodes.init;
 
+import BrassAmber.com.brass_geodes.BrassGeodes;
 import BrassAmber.com.brass_geodes.block.*;
 import BrassAmber.com.brass_geodes.util.GemMaterial;
 import BrassAmber.com.brass_geodes.worldgen.tree.GemcornTreeGrower;

@@ -1,8 +1,7 @@
 package BrassAmber.com.brass_geodes;
 
 import BrassAmber.com.brass_geodes.client.BGBlockRender;
-import BrassAmber.com.brass_geodes.worldgen.tree.BGTreeDecorators;
-import BrassAmber.com.brass_geodes.worldgen.tree.BGTrunkPlacerTypes;
+import BrassAmber.com.brass_geodes.init.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.common.MinecraftForge;
@@ -32,6 +31,7 @@ public class BrassGeodes {
         BGBlocks.register(eventBus);
         BGTreeDecorators.register(eventBus);
         BGTrunkPlacerTypes.register(eventBus);
+        BGFeatures.register(eventBus);
 
         eventBus.addListener(this::setUpClient);
         eventBus.addListener(this::addCreative);

@@ -1,18 +1,15 @@
 package BrassAmber.com.brass_geodes.worldgen.tree.custom;
 
-import BrassAmber.com.brass_geodes.BGBlocks;
+import BrassAmber.com.brass_geodes.init.BGBlocks;
 import BrassAmber.com.brass_geodes.block.GemcornBranch;
 import BrassAmber.com.brass_geodes.util.BGUtil;
-import BrassAmber.com.brass_geodes.worldgen.tree.BGTreeDecorators;
+import BrassAmber.com.brass_geodes.init.BGTreeDecorators;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.util.RandomSource;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.predicate.BlockStatePredicate;
 import net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecorator;
 import net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecoratorType;
 

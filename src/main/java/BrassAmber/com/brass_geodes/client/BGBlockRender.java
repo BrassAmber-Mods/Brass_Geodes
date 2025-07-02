@@ -1,6 +1,6 @@
 package BrassAmber.com.brass_geodes.client;
 
-import BrassAmber.com.brass_geodes.BGBlocks;
+import BrassAmber.com.brass_geodes.init.BGBlocks;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraftforge.api.distmarker.Dist;

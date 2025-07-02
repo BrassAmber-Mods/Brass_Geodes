@@ -1,17 +1,14 @@
 package BrassAmber.com.brass_geodes.datagen;
 
-import BrassAmber.com.brass_geodes.BGBlocks;
-import BrassAmber.com.brass_geodes.BGItems;
+import BrassAmber.com.brass_geodes.init.BGBlocks;
+import BrassAmber.com.brass_geodes.init.BGItems;
 import BrassAmber.com.brass_geodes.BrassGeodes;
 import BrassAmber.com.brass_geodes.util.BGTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.Tags;
-import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
 

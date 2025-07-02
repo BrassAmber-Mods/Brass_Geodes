@@ -1,7 +1,7 @@
 package BrassAmber.com.brass_geodes.datagen.loot;
 
-import BrassAmber.com.brass_geodes.BGBlocks;
-import BrassAmber.com.brass_geodes.BGItems;
+import BrassAmber.com.brass_geodes.init.BGBlocks;
+import BrassAmber.com.brass_geodes.init.BGItems;
 import net.minecraft.advancements.critereon.ItemPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.tags.ItemTags;

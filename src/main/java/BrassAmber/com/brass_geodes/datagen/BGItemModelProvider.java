@@ -1,7 +1,7 @@
 package BrassAmber.com.brass_geodes.datagen;
 
-import BrassAmber.com.brass_geodes.BGBlocks;
-import BrassAmber.com.brass_geodes.BGItems;
+import BrassAmber.com.brass_geodes.init.BGBlocks;
+import BrassAmber.com.brass_geodes.init.BGItems;
 import BrassAmber.com.brass_geodes.BrassGeodes;
 
 import net.minecraft.data.PackOutput;

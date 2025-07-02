@@ -1,12 +1,10 @@
-package BrassAmber.com.brass_geodes;
+package BrassAmber.com.brass_geodes.init;
 
+import BrassAmber.com.brass_geodes.BrassGeodes;
 import BrassAmber.com.brass_geodes.item.GemItem;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.Rarity;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;

@@ -1,4 +1,4 @@
-package BrassAmber.com.brass_geodes.worldgen.tree;
+package BrassAmber.com.brass_geodes.init;
 
 
 import BrassAmber.com.brass_geodes.BrassGeodes;

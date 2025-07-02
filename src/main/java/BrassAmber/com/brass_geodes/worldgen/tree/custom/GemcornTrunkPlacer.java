@@ -1,6 +1,6 @@
 package BrassAmber.com.brass_geodes.worldgen.tree.custom;
 
-import BrassAmber.com.brass_geodes.worldgen.tree.BGTrunkPlacerTypes;
+import BrassAmber.com.brass_geodes.init.BGTrunkPlacerTypes;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.core.BlockPos;

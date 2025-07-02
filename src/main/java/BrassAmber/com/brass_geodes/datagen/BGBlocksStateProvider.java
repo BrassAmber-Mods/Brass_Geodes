@@ -1,6 +1,6 @@
 package BrassAmber.com.brass_geodes.datagen;
 
-import BrassAmber.com.brass_geodes.BGBlocks;
+import BrassAmber.com.brass_geodes.init.BGBlocks;
 import BrassAmber.com.brass_geodes.BrassGeodes;
 import BrassAmber.com.brass_geodes.block.GemcornSaplingBlock;
 import net.minecraft.data.PackOutput;

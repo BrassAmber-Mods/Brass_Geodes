@@ -1,6 +1,6 @@
 package BrassAmber.com.brass_geodes.datagen;
 
-import BrassAmber.com.brass_geodes.BGBlocks;
+import BrassAmber.com.brass_geodes.init.BGBlocks;
 import BrassAmber.com.brass_geodes.BrassGeodes;
 import BrassAmber.com.brass_geodes.util.BGTags;
 import net.minecraft.core.HolderLookup;
@@ -9,7 +9,6 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
-import net.minecraftforge.common.data.ForgeBlockTagsProvider;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
