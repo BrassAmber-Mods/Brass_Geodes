@@ -6,8 +6,10 @@ import BrassAmber.com.brass_geodes.util.BGTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.common.data.ForgeBlockTagsProvider;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
@@ -31,6 +33,13 @@ public class BGBlockTagGenerator extends BlockTagsProvider  {
 
         this.tag(BGTags.Blocks.GEMCORN_CAN_GROW_THROUGH)
                 .add(Blocks.CAVE_AIR);
+
+        this.tag(Tags.Blocks.GLASS_TINTED)
+                .add(BGBlocks.TOPAZ_TINTED_GLASS.get())
+                .add(BGBlocks.SAPPHIRE_TINTED_GLASS.get())
+                .add(BGBlocks.RUBY_TINTED_GLASS.get())
+                .add(BGBlocks.EMERALD_TINTED_GLASS.get())
+                .add(BGBlocks.DIAMOND_TINTED_GLASS.get());
     }
 
     @Override

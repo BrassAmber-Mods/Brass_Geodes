@@ -8,7 +8,9 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
@@ -28,6 +30,19 @@ public class BGItemTagGenerator extends ItemTagsProvider {
                 .add(BGItems.SAPPHIRE.get())
                 .add(BGItems.RUBY.get())
                 .add(BGItems.PEARL.get());
+
+        this.tag(Tags.Items.GEMS)
+                .add(BGItems.TOPAZ.get())
+                .add(BGItems.SAPPHIRE.get())
+                .add(BGItems.RUBY.get())
+                .add(BGItems.PEARL.get());
+
+        this.tag(Tags.Items.GLASS_TINTED)
+                .add(BGBlocks.TOPAZ_TINTED_GLASS.get().asItem())
+                .add(BGBlocks.SAPPHIRE_TINTED_GLASS.get().asItem())
+                .add(BGBlocks.RUBY_TINTED_GLASS.get().asItem())
+                .add(BGBlocks.EMERALD_TINTED_GLASS.get().asItem())
+                .add(BGBlocks.DIAMOND_TINTED_GLASS.get().asItem());
     }
 
     @Override
