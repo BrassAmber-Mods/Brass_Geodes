@@ -73,8 +73,8 @@
     "distribution_points": {
       "type": "minecraft:uniform",
       "value": {
-        "max_inclusive": 6,
-        "min_inclusive": 3
+        "max_inclusive": 4,
+        "min_inclusive": 2
       }
     },
     "invalid_blocks_threshold": 1,
@@ -90,8 +90,8 @@
     "outer_wall_distance": {
       "type": "minecraft:uniform",
       "value": {
-        "max_inclusive": 4,
-        "min_inclusive": 2
+        "max_inclusive": 3,
+        "min_inclusive": 1
       }
     },
     "placements_require_layer0_alternate": false,

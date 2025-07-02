@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:geode",
+  "type": "brass_geodes:bg_geode",
   "config": {
     "blocks": {
       "alternate_inner_layer_provider": {

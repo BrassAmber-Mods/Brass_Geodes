@@ -1,12 +1,12 @@
 package BrassAmber.com.brass_geodes.worldgen;
 
-import BrassAmber.com.brass_geodes.BGBlocks;
+import BrassAmber.com.brass_geodes.init.BGBlocks;
+import BrassAmber.com.brass_geodes.init.BGFeatures;
 import BrassAmber.com.brass_geodes.BrassGeodes;
 import BrassAmber.com.brass_geodes.worldgen.tree.custom.GemcornTrunkDecorator;
 import BrassAmber.com.brass_geodes.worldgen.tree.custom.GemcornTrunkPlacer;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
-import net.minecraft.data.worldgen.placement.OrePlacements;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
@@ -113,7 +113,7 @@ public class BGConfiguredFeatures {
 
 
     public static void registerGeode(BootstapContext<ConfiguredFeature<?, ?>> context, ResourceKey<ConfiguredFeature<?, ?>> key, Block rawBlock, Block buddingBlock, List<BlockState> buds) {
-        register(context, key, Feature.GEODE,
+        register(context, key, BGFeatures.BG_GEODE.get(),
                 new GeodeConfiguration(new GeodeBlockSettings(
                         BlockStateProvider.simple(Blocks.AIR),
                         BlockStateProvider.simple(rawBlock),
@@ -142,8 +142,8 @@ public class BGConfiguredFeatures {
                         BlockTags.FEATURES_CANNOT_REPLACE , BlockTags.GEODE_INVALID_BLOCKS),
                         new GeodeLayerSettings(1.7D, 2.2D, 3.2D, 4.2D),
                         new GeodeCrackSettings(0.25D, 1.0D, 1), 0.35D, 0.083D,
-                        false, UniformInt.of(2, 4),
-                        UniformInt.of(3, 6), UniformInt.of(1, 2),
+                        false, UniformInt.of(1, 3),
+                        UniformInt.of(2, 4), UniformInt.of(1, 2),
                         -12, 12, 0.05D, 1)
         );
     }
