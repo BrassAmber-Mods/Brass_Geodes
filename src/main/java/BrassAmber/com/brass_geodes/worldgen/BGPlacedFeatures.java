@@ -18,6 +18,8 @@ import net.minecraft.world.level.levelgen.placement.*;
 
 import java.util.List;
 
+import static net.minecraft.world.level.levelgen.blockpredicates.BlockPredicate.matchesBlocks;
+
 public class BGPlacedFeatures {
 
     public static final ResourceKey<PlacedFeature> AMETHYST_GEMCORN_PLACED_KEY = registerKey("amethyst_gemcorn");
@@ -33,6 +35,8 @@ public class BGPlacedFeatures {
     public static final ResourceKey<PlacedFeature> EMERALD_GEODE_PLACED_KEY = registerKey("emerald_geode_placed");
     public static final ResourceKey<PlacedFeature> DIAMOND_GEODE_PLACED_KEY = registerKey("diamond_geode_placed");
 
+    public static BlockPredicate AIR_PREDICATE = matchesBlocks(Blocks.AIR);
+
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
         
@@ -46,8 +50,8 @@ public class BGPlacedFeatures {
         registerPlacedGeode(context, TOPAZ_GEODE_PLACED_KEY, configuredFeatures, BGConfiguredFeatures.TOPAZ_GEODE_KEY, 72, 6, 30);
         registerPlacedGeode(context, SAPPHIRE_GEODE_PLACED_KEY, configuredFeatures, BGConfiguredFeatures.SAPPHIRE_GEODE_KEY, 72, 6, 30);
         registerPlacedGeode(context, RUBY_GEODE_PLACED_KEY, configuredFeatures, BGConfiguredFeatures.RUBY_GEODE_KEY, 72, 6, 30);
-        registerPlacedGeode(context, EMERALD_GEODE_PLACED_KEY, configuredFeatures, BGConfiguredFeatures.EMERALD_GEODE_KEY, 96, 9, 30);
-        registerPlacedGeode(context, DIAMOND_GEODE_PLACED_KEY, configuredFeatures, BGConfiguredFeatures.DIAMOND_GEODE_KEY, 104, -80, 80);
+        registerPlacedGeode(context, EMERALD_GEODE_PLACED_KEY, configuredFeatures, BGConfiguredFeatures.EMERALD_GEODE_KEY, 96, 6, 30);
+        registerPlacedGeode(context, DIAMOND_GEODE_PLACED_KEY, configuredFeatures, BGConfiguredFeatures.DIAMOND_GEODE_KEY, 104, 6, 30);
 
     }
 
@@ -61,7 +65,7 @@ public class BGPlacedFeatures {
                         PlacementUtils.countExtra(0, rarity, 1),
                         InSquarePlacement.spread(),
                         HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(10), VerticalAnchor.absolute(topAnchor)),
-                        EnvironmentScanPlacement.scanningFor(Direction.DOWN, BlockPredicate.solid(), BlockPredicate.matchesBlocks(Blocks.AIR), 12),
+                        EnvironmentScanPlacement.scanningFor(Direction.DOWN, BlockPredicate.solid(), matchesBlocks(Blocks.AIR), 12),
                         RandomOffsetPlacement.vertical(ConstantInt.of(1)),
                         BiomeFilter.biome()
                 )
