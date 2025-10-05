@@ -1,0 +1,31 @@
+{
+  "values": [
+    "brass_geodes:topaz_cluster",
+    "brass_geodes:sapphire_cluster",
+    "brass_geodes:ruby_cluster",
+    "brass_geodes:emerald_cluster",
+    "brass_geodes:diamond_cluster",
+    "brass_geodes:large_topaz_bud",
+    "brass_geodes:large_sapphire_bud",
+    "brass_geodes:large_ruby_bud",
+    "brass_geodes:large_emerald_bud",
+    "brass_geodes:large_diamond_bud",
+    "brass_geodes:medium_topaz_bud",
+    "brass_geodes:medium_sapphire_bud",
+    "brass_geodes:medium_ruby_bud",
+    "brass_geodes:medium_emerald_bud",
+    "brass_geodes:medium_diamond_bud",
+    "brass_geodes:small_topaz_bud",
+    "brass_geodes:small_sapphire_bud",
+    "brass_geodes:small_ruby_bud",
+    "brass_geodes:small_emerald_bud",
+    "brass_geodes:small_diamond_bud",
+    "brass_geodes:gemcorn_trunk",
+    "brass_geodes:amethyst_trunk",
+    "brass_geodes:topaz_trunk",
+    "brass_geodes:sapphire_trunk",
+    "brass_geodes:ruby_trunk",
+    "brass_geodes:emerald_trunk",
+    "brass_geodes:diamond_trunk"
+  ]
+}
