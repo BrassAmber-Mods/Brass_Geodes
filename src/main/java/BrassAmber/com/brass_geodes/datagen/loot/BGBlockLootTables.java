@@ -72,12 +72,12 @@ public class BGBlockLootTables extends BlockLootSubProvider {
         this.noDrop(BGBlocks.GEMCORN_BRANCH.get());
 
         this.dropWhenSilkTouch(BGBlocks.GEMCORN_TRUNK.get());
-        this.noDrop(BGBlocks.AMETHYST_TRUNK.get());
-        this.noDrop(BGBlocks.TOPAZ_TRUNK.get());
-        this.noDrop(BGBlocks.SAPPHIRE_TRUNK.get());
-        this.noDrop(BGBlocks.RUBY_TRUNK.get());
-        this.noDrop(BGBlocks.EMERALD_TRUNK.get());
-        this.noDrop(BGBlocks.DIAMOND_TRUNK.get());
+        this.dropWhenSilkTouch(BGBlocks.AMETHYST_TRUNK.get());
+        this.dropWhenSilkTouch(BGBlocks.TOPAZ_TRUNK.get());
+        this.dropWhenSilkTouch(BGBlocks.SAPPHIRE_TRUNK.get());
+        this.dropWhenSilkTouch(BGBlocks.RUBY_TRUNK.get());
+        this.dropWhenSilkTouch(BGBlocks.EMERALD_TRUNK.get());
+        this.dropWhenSilkTouch(BGBlocks.DIAMOND_TRUNK.get());
 
         this.silkTouchAndOtherWithFortune(
                 BGBlocks.AMETHYST_BRANCH.get(), Items.AMETHYST_SHARD,
