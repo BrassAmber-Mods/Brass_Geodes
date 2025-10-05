@@ -81,27 +81,27 @@ public class BGBlockLootTables extends BlockLootSubProvider {
 
         this.silkTouchAndOtherWithFortune(
                 BGBlocks.AMETHYST_BRANCH.get(), Items.AMETHYST_SHARD,
-                1, 3
+                1, 3, BGBlocks.AMETHYST_SAPLING.get()
         );
         this.silkTouchAndOtherWithFortune(
                 BGBlocks.TOPAZ_BRANCH.get(), BGItems.TOPAZ.get(),
-                1, 3
+                1, 3, BGBlocks.TOPAZ_SAPLING.get()
         );
         this.silkTouchAndOtherWithFortune(
                 BGBlocks.SAPPHIRE_BRANCH.get(), BGItems.SAPPHIRE.get(),
-                1, 3
+                1, 3, BGBlocks.SAPPHIRE_SAPLING.get()
         );
         this.silkTouchAndOtherWithFortune(
                 BGBlocks.RUBY_BRANCH.get(), BGItems.RUBY.get(),
-                1, 3
+                1, 3, BGBlocks.RUBY_SAPLING.get()
         );
         this.silkTouchAndOtherWithFortune(
                 BGBlocks.EMERALD_BRANCH.get(), Items.EMERALD,
-                1, 2
+                1, 2, BGBlocks.EMERALD_SAPLING.get()
         );
         this.silkTouchAndOtherWithFortune(
                 BGBlocks.DIAMOND_BRANCH.get(), Items.DIAMOND,
-                1, 1
+                1, 1, BGBlocks.DIAMOND_SAPLING.get()
         );
 
         this.dropSelf(BGBlocks.TOPAZ_TINTED_GLASS.get());
@@ -138,9 +138,16 @@ public class BGBlockLootTables extends BlockLootSubProvider {
         );
     }
 
-    protected void silkTouchAndOtherWithFortune(Block block, ItemLike drop, float min, float max){
+    protected void silkTouchAndOtherWithFortune(Block block, ItemLike drop, float min, float max, ItemLike drop2){
         this.add(block,
-                createSilkTouchDispatchTable(block, this.applyExplosionDecay(block, LootItem.lootTableItem(drop).apply(SetItemCountFunction.setCount(UniformGenerator.between(min, max))).apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))))
+                createSilkTouchDispatchTable(
+                        block, this.applyExplosionDecay(block, LootItem.lootTableItem(drop)
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(min, max)))
+                                .apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))))
+                        .withPool(
+                                LootPool.lootPool().when(HAS_NO_SILK_TOUCH).setRolls(ConstantValue.exactly(1f))
+                                        .add(LootItem.lootTableItem(drop2).setWeight(1)).add(LootItem.lootTableItem(Items.AIR).setWeight(12))
+                        )
         );
     }
 

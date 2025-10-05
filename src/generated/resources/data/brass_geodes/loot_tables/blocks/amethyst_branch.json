@@ -53,6 +53,39 @@
         }
       ],
       "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "enchantments": [
+                {
+                  "enchantment": "minecraft:silk_touch",
+                  "levels": {
+                    "min": 1
+                  }
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "brass_geodes:amethyst_sapling"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:air",
+          "weight": 12
+        }
+      ],
+      "rolls": 1.0
     }
   ],
   "random_sequence": "brass_geodes:blocks/amethyst_branch"
